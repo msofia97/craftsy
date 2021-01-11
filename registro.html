@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/registro.css">
+    <link rel="stylesheet" href=https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans&sidebar.open=true>;
+</head>
+<body>
+    <div class="home">
+<header>
+    <img src="./img/logo.png" alt="">
+    <nav>
+        <ul class="lista1">
+            <li><a href="">smartphone</a></li>
+            <li><a href="">tablets</a></li>
+            <li><a href="">computadoras</a></li>
+        </ul>
+        <ul class="lista2">
+            <li><a href="login.html">login</a></li>
+            <li><a href="registro.html">registro</a></li>
+        </ul>
+        <ul class="listacelu">
+            <li><a href="">smartphone</a></li>
+            <li><a href="">tablets</a></li>
+            <li><a href="">computadoras</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1>registrate</h1>
+    <form action="" method="post">
+        <div class="datosPersonales">
+    <label><b>Nombre</b><br><input type="text" name="nombre" placeholder="Ingresá tu nombre"></label><br>
+    <p class="text-danger">Obligatorio.</p><br>
+        <label><b>Email</b><br><input type="email" name="email" placeholder="Ingresá tu email"></label>
+    <p class="text-danger">Obligatorio.</p><br>
+        <label><b>Contraseña</b><br><input type="password" name="password" placeholder="Password"></label>
+    <p class="text-danger">Obligatorio.</p><br>
+    </div>
+    </form>
+    <div class="otrosDatos">
+        <form action="">
+            <div class="nacionalidad">
+                <h3>País de nacimiento</h3><br>
+                <select name="pais" id="pais">
+                    <option value="">Seleccione aquí</option>
+                    <option value="ar">Argentina</option>
+                    <option value="uy">Uruguay</option>
+                    <option value="br">Brasil</option>
+                </select>
+                <p class="text-danger">Obligatorio.</p><br>
+            </div>
+            <div class="genero">
+                <h3>Género</h3><br>
+                <input type="radio" name="genero" value="3" id="genero3"><label for="genero3">Femenino </label>
+                <input type="radio" name="genero" value="2" id="genero2"><label for="genero2">Masculino </label>
+               <input type="radio" name="genero" value="1"id="genero1"><label for="genero3">Otro</label><br>
+
+               <br>
+            </div>
+            <div class="hobbies">
+                <h3>Hobbies</h3><br>
+                <input type="checkbox" name="hobbie" id="1"><label for="1">Música</label>
+                <input type="checkbox" name="hobbie" id="2"><label for="2">Manualidades</label>
+                <input type="checkbox" name="hobbie" id="3"><label for="3">Deportes</label>
+                <input type="checkbox" name="hobbie" id="4"><label for="2">Programación</label><br>
+
+                <br>
+            </div>
+            <div>
+                <h3>Dejanos tu comentario</h3>
+                <div class="mensaje"><br>
+                    <textarea name="mensaje" id="" cols="30" rows="10">Mensaje</textarea><br>
+                    <input type="checkbox" name="termycond" id="tyc"><label for="1"> Acepto los términos y condiciones.</label><br>
+                    <br>
+                </div>
+                <button type="submit">Registrarme</button>
+                <button type="submit">Cancelar</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

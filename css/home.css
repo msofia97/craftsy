@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home li{
+    list-style: none;
+    display: inline;
+    font-weight: bold;
+}
+
+.home a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+body{
+    background-image:url('../img/bg-2.png');
+}
+
+.home{
+    max-width:1140px;
+    width: 100%;
+    margin-top:150px;
+}
+
+/*Header*/
+.home header{
+background-color:orangered;
+max-width:1140px;
+width: 100%;
+padding:15px;
+overflow:hidden;
+margin-bottom: 20px;
+position:fixed;
+z-index: 1;
+top:0;
+}
+.home header img{
+float:left;
+}
+
+.home header ul.lista1{
+    float:left;
+    padding:10px;
+    display:none /*No me muestra el elemento, en este caso para que se sobre escriba con la lista repetida para acommodar ubicación de ul*/
+}
+
+.home header ul.lista2{
+float:right;
+padding:10px;
+}
+.home header ul.listacelu{
+    padding:10px;
+    display:inline-block;
+    text-align:center;
+}
+.home header li{
+padding:10px;
+}
+/*Finaliza header*/
+
+/*Main*/
+.home main{
+float:left;
+width: 100%;
+background-color: white;
+margin-bottom: 10px;
+overflow: hidden;
+}
+/*Productos*/
+.home main section{
+    width: 100%;
+    margin:10px;
+    position:relative;
+}
+.home main section img.icon{
+    width: 60px;
+    position:absolute;
+    right: 20px;
+}
+.home main section img{
+    width:100% ;
+}
+.home main section h2{
+    margin:15px 0;
+}
+.home main section p{
+    margin-bottom: 15px;
+}
+.home main section button{
+    background-color: orangered;
+    border:orangered;
+}
+.home main section button a{
+    font-weight: bold;
+    padding:10px;
+    display:inline-block;
+}
+/*Sección lateral*/
+.home aside{
+width: 100%;
+overflow: hidden;
+}
+.home aside section h2{
+    text-transform: capitalize;
+    background-color: white;
+    padding:10px;
+    border:1px solid skyblue;
+    margin-bottom: 10px;
+}
+
+/*Artículos*/ /*tutoriales*/
+.home aside section{
+    margin-bottom: 30px;
+}
+.home aside section article{
+    padding:10px;
+    background-color: white;
+    border:1px solid skyblue;
+    position:relative;
+}
+.home aside section article img.icon{
+    position:absolute ;
+    width:50px ;
+    right: 5px;
+    top:0px;
+}
+.home aside section article a{
+    color:black;
+    text-transform: none;
+    width: 185px;
+    padding:20px,10px;
+}
+
+/*Publicidad*/
+.home aside section.publicidad{
+    background-color: white;
+    border:1px solid skyblue;
+    padding:10px 10px;
+}
+.home aside section.publicidad img{
+    width: 100%;
+}
+
+
+/*tablet*/
+@media(min-width:426px){
+    .home{
+        margin-top: 100px;
+    }
+    .home main{
+        max-width: 70%;
+    }
+    .home main section{
+        max-width: 45%;
+        display:inline-block;
+    }
+    .home aside{
+        max-width:27%;
+    }
+}
+
+/*escritorio*/
+@media(min-width:769px){
+.home main{
+    width:70%;
+}
+.home main section{
+    width:55%;
+}
+.home aside{
+    width:35%;
+}
+}
